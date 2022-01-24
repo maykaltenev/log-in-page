@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Oxygen", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  transition: 0.4s;
+}
+div {
+  margin: 15px;
+
+  border: 3px black solid;
+}
+
+.logos,
+.sign-in {
+  margin: 2vh auto;
+  width: 25%;
+  height: 25%;
+  display: inline-block;
+}
