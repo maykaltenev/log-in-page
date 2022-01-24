@@ -10,16 +10,31 @@ body {
   height: 100vh;
   transition: 0.4s;
 }
+.outbox {
+  margin: 20 auto;
+  width: 60vw;
+  height: 40vw;
+  border: 2px orange dashed;
+}
 
-.left {
-  margin: 10px;
-  width: 400px;
-  height: 200px;
-  border: 4px black solid;
+.left,
+.right {
+  margin: 2vh auto;
+  width: 25%;
+  height: 25%;
+  display: inline-block;
+  border: 2px red dashed;
 }
 .logo-span {
-  margin: 3;
-  height: 100px;
-  width: 250px;
-  border: 3px red solid;
+  margin: 5 auto;
+  width: 40vw;
+  height: 40wv;
+  border: 2px blue dashed;
+  position: relative;
+}
+a {
+}
+.bottom {
+  margin: 2vh auto;
+  border: 2px red solid;
 }
