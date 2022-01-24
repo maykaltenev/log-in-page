@@ -10,16 +10,16 @@ body {
   height: 100vh;
   transition: 0.4s;
 }
-div {
-  margin: 15px;
 
-  border: 3px black solid;
+.left {
+  margin: 10px;
+  width: 400px;
+  height: 200px;
+  border: 4px black solid;
 }
-
-.logos,
-.sign-in {
-  margin: 2vh auto;
-  width: 25%;
-  height: 25%;
-  display: inline-block;
+.logo-span {
+  margin: 3;
+  height: 100px;
+  width: 250px;
+  border: 3px red solid;
 }
