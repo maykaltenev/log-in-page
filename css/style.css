@@ -10,16 +10,34 @@ body {
   height: 100vh;
   transition: 0.4s;
 }
-div {
-  margin: 15px;
-  border: 3px red dashed;
+.container {
+  margin: 0;
+  width: 40%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left,
+.right {
+  width: 500px;
+  height: 150px;
+  border: 2px red dashed;
+}
+.left div span {
+  width: 150px;
+  height: 100px;
+  border: 2px orange dashed;
 }
 
-.logos,
+/* .logos,
 .sign-in {
   margin: 2vh auto;
   width: 25vw;
   height: 25vh;
   display: flex;
   justify-content: space-between;
+} */
+.bottom {
+  align-self: baseline;
 }
