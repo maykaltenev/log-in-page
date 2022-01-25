@@ -20,25 +20,42 @@ body {
   justify-content: center;
   align-items: center;
 }
-section article:nth-child(1),
-section article:nth-child(2),
-section article:nth-child(3) {
-  width: 60vw;
-  height: 50vh;
-  border: 2px violet dashed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .logo {
   width: 40vw;
   height: 40vh;
-  border: 3px red solid;
+  border: 20px red solid;
   display: flex;
   flex-direction: column;
 }
+section article:nth-child(1),
+section article:nth-child(3) {
+  width: 60vw;
+  height: 50vh;
+  border: 2px green dashed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* box checkers */
+/* .middle {
+  border: 20px green solid;
+}
+.login {
+  border: 20px blue solid;
+} */
 section article:nth-child(1) > div {
-  width: 20vw;
-  height: 10vh;
+  width: 15vw;
+  height: 8vh;
   border: 2px purple dashed;
+  text-align: center;
+}
+section article:nth-child(1) div span a {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 15vw;
+  height: 8vh;
+  border: 2px coral dashed;
 }
