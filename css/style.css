@@ -58,15 +58,13 @@ body {
 }
 form {
   text-align: center;
-  font-size: 20px gray;
-  padding: 5px;
+  font-size: 20px;
 }
 input[name="password"],
 input[name="email"] {
   margin-left: 25%;
   width: 250px;
   padding: 5px 5px;
-
   border: none;
   outline: none;
   background-color: white;
@@ -74,6 +72,7 @@ input[name="email"] {
   text-align: center;
   opacity: 0.8;
 }
+
 input[name="password"] {
   position: relative;
 }
@@ -87,12 +86,20 @@ i {
   padding-right: 5px;
   color: white;
 }
+#user {
+  position: absolute;
+  margin-left: 125px;
+  margin-bottom: 40px;
+  color: gray;
+  z-index: 1;
+}
 #pass {
   position: absolute;
   margin-left: 125px;
   color: gray;
   z-index: 1;
 }
+
 .fb {
   background-color: #4267b2;
 }
