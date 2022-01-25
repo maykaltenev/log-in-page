@@ -45,5 +45,18 @@ body {
   left: 0;
   text-align: center;
   padding: 25px 10px;
-  border: 2px red solid;
 }
+a {
+  border-left: 2px inset black;
+}
+
+.fb {
+  background-color: #4267b2;
+}
+.google {
+  background-color: #db3236;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+/* FB #4267B2 */
