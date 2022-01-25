@@ -116,3 +116,8 @@ input[name="remember"] {
   height: 3%;
   top: 22vh;
 }
+
+#rem {
+  position: absolute;
+  width: 2;
+}
