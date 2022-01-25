@@ -121,3 +121,10 @@ input[name="remember"] {
   position: absolute;
   width: 2;
 }
+input[type="button"] {
+  position: absolute;
+  width: 10%;
+  height: 5%;
+  top: 150px;
+  right: 50px;
+}
