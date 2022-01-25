@@ -32,13 +32,12 @@ body {
   margin-left: 15%;
   width: 15vw;
   height: 10vh;
-  border: 2px blue dashed;
+  border: 1px #e5e4e8 solid;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   position: relative;
   text-decoration: none;
-  border-left: 1px black solid;
 }
 .left div span a {
   position: absolute;
@@ -53,7 +52,7 @@ body {
 }
 
 .right {
-  border: 2px orange dashed;
+  border: 2px #e5e4e8 solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,13 +105,13 @@ i {
 }
 
 .fb {
-  background-color: #4267b2;
+  background-color: #517cc0;
 }
 .google {
-  background-color: #db3236;
+  background-color: #df4a32;
 }
 .twitter {
-  background-color: #1da1f2;
+  background-color: #65cdf0;
 }
 /* FB #4267B2 */
 input[name="remember"] {
@@ -139,10 +138,10 @@ input[type="button"] {
   left: 400px;
 }
 .bottom {
-  border: 2px solid gray;
+  border: 2px solid #e5e4e8;
   width: 1170px;
   height: 5vh;
-  background-color: lightcyan;
+  background-color: #f2f9ff;
   border: 2px black solid;
   position: absolute;
   top: 230px;
@@ -155,4 +154,15 @@ input[type="button"] {
   text-align: center;
   color: blue;
   border: none;
+}
+.middle {
+  width: 2.5rem;
+  height: 2.5rem;
+  align-content: center;
+  border: 5px solid e5e4e8;
+  color: gray;
+  content: "";
+  border-radius: 50%;
+  top: 4vh;
+  left: 400px;
 }
