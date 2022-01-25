@@ -13,33 +13,31 @@ body {
 .container {
   margin: 0;
   width: 90vw;
-  height: 50vh;
+  height: 60vh;
+  border: 2px green dashed;
   display: flex;
-  border: 2px green solid;
 }
 .middle {
   border: 2px rebeccapurple dashed;
 }
-/* .left,
+.left,
 .right {
-  width: 50vw;
-  height: 40vh;
-  padding: 0 50px;
+  width: 40vw;
+  height: 30vh;
   border: 2px red dashed;
-  display: flex;
 }
 
 .left > div {
-  width: 5wh;
-  height: 5wh;
+  margin-left: 15%;
+  width: 15vw;
+  height: 10vh;
   border: 2px blue dashed;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
-
   position: relative;
 }
-.left div span {
+ .left div span {
   position: absolute;
   top: 0;
   right: 0;
