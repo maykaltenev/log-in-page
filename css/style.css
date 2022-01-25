@@ -38,8 +38,9 @@ body {
   justify-content: space-evenly;
   position: relative;
   text-decoration: none;
+  border-left: 1px black solid;
 }
-.left div span {
+.left div span a {
   position: absolute;
   top: 0;
   right: 0;
@@ -147,7 +148,9 @@ input[type="button"] {
   top: 230px;
   left: 0px;
 }
-
+.bottom-span {
+  display: flex;
+}
 .bottom-span > a {
   text-align: center;
   color: blue;
