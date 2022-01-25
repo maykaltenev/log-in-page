@@ -12,13 +12,15 @@ body {
 }
 .container {
   margin: 0;
-  width: 50vw;
+  width: 90vw;
   height: 50vh;
   display: flex;
   border: 2px green solid;
-  j
 }
-.left,
+.middle {
+  border: 2px rebeccapurple dashed;
+}
+/* .left,
 .right {
   width: 50vw;
   height: 40vh;
@@ -35,24 +37,12 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
 
-  /* position: relative; */
+  position: relative;
 }
 .left div span {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-/* .logos,
-.sign-in {
-  margin: 2vh auto;
-  width: 25vw;
-  height: 25vh;
-  display: flex;
-  justify-content: space-between;
-} */
-/* .bottom {
-  align-self: baseline;
 } */
