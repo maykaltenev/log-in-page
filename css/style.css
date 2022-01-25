@@ -12,35 +12,38 @@ body {
 }
 .container {
   margin: 0;
-  width: 80vw;
-  height: 40vh;
+  width: 50vw;
+  height: 50vh;
   display: flex;
+  border: 2px green solid;
+  j
 }
 .left,
 .right {
-  width: 60vw;
-  height: auto;
+  width: 50vw;
+  height: 40vh;
   padding: 0 50px;
   border: 2px red dashed;
+  display: flex;
 }
 
-.left div {
-  width: 50%;
-  height: 20%;
-  border: 2px orange dashed;
-  text-align: center;
-  position: relative;
-  text-align: center;
- 
+.left > div {
+  width: 5wh;
+  height: 5wh;
+  border: 2px blue dashed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  /* position: relative; */
 }
 .left div span {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-
-} */
+}
 
 /* .logos,
 .sign-in {
