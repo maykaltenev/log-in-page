@@ -45,14 +45,18 @@ body {
   bottom: 0;
   left: 0;
   text-align: center;
+  width: 15vw;
+  height: 10vh;
   padding: 25px 10px;
 }
 a {
-  border-left: 2px inset #4267b2;
+  padding-left: 10px;
+  border-left: 2px inset;
   text-decoration: none;
   color: white;
 }
 i {
+  padding-right: 5px;
   color: white;
 }
 
