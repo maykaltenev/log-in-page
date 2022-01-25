@@ -12,28 +12,26 @@ body {
 }
 .container {
   margin: 0;
-  width: 95vw;
-  height: 60vh;
+  width: 80vw;
+  height: 40vh;
   display: flex;
 }
 .left,
 .right {
-  width: 500px;
+  width: 60vw;
   height: auto;
   padding: 0 50px;
   border: 2px red dashed;
 }
-/* .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
+
 .left div {
-  width: 40%;
+  width: 50%;
   height: 20%;
   border: 2px orange dashed;
   text-align: center;
   position: relative;
+  text-align: center;
+ 
 }
 .left div span {
   position: absolute;
@@ -41,6 +39,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+
 } */
 
 /* .logos,
