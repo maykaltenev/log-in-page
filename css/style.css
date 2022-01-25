@@ -16,7 +16,7 @@ body {
   height: 60vh;
   border: 2px green dashed;
   display: flex;
-  display: relative;
+  position: relative;
 }
 .middle {
   border: 2px rebeccapurple dashed;
@@ -138,10 +138,18 @@ input[type="button"] {
   left: 400px;
 }
 .bottom {
-  width: 1000px;
+  border: 2px solid gray;
+  width: 1170px;
+  height: 5vh;
   background-color: lightcyan;
-  border: 2px lightcyan solid;
+  border: 2px black solid;
+  position: absolute;
+  top: 230px;
+  left: 0px;
 }
+
 .bottom-span > a {
+  text-align: center;
   color: blue;
+  border: none;
 }
