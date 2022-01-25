@@ -12,6 +12,14 @@ body {
   border: 2px blue dashed;
 }
 
+.container {
+  width: 90vw;
+  height: 50vh;
+  border: 2px green dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 section article:nth-child(1),
 section article:nth-child(2),
 section article:nth-child(3) {
@@ -21,6 +29,13 @@ section article:nth-child(3) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.logo {
+  width: 40vw;
+  height: 40vh;
+  border: 3px red solid;
+  display: flex;
+  flex-direction: column;
 }
 section article:nth-child(1) > div {
   width: 20vw;
