@@ -110,3 +110,9 @@ i {
   background-color: #1da1f2;
 }
 /* FB #4267B2 */
+input[name="remember"] {
+  position: absolute;
+  width: 20%;
+  height: 3%;
+  top: 22vh;
+}
