@@ -15,19 +15,19 @@ body {
 .container {
   width: 52vw;
   height: 45vh;
-  border: 2px green dashed;
+  border: 2px lightgray solid;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: #fffafa;
+  background-color: #fffafa;
   /* position: relative; */
 }
 
 .logo {
   width: 40vw;
   height: 40vh;
-  border: 20px red solid;
+  /* border: 20px red solid; */
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +36,7 @@ section article:nth-child(1),
 section article:nth-child(3) {
   width: 25vw;
   height: 40vh;
-  border: 2px green dashed;
+  /* border: 2px green dashed; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -104,7 +104,7 @@ section article:nth-child(1) div span i {
   align-self: center;
 }
 section article:nth-child(3) > form {
-  border: 5px rgb(23, 129, 135) solid;
+  /* border: 5px rgb(23, 129, 135) solid; */
   width: 35vw;
   height: 35vh;
   display: flex;
@@ -131,7 +131,7 @@ section article:nth-child(3) > form > section {
   display: flex;
   width: 17vw;
   height: 5vh;
-  border: 2px purple dashed;
+  /* border: 2px purple dashed; */
   justify-content: space-between;
 }
 /* section article:nth-child(3) > form section > div:nth-of-type(1) label {
@@ -153,25 +153,26 @@ section
   > input[type="button"] {
   width: 85px;
   height: 40px;
-  text-decoration: none;
-  border: none;
+  border: lightblue;
   background-color: #87cefa;
   color: white;
+  cursor: pointer;
   /* font-weight: bold; */
 }
 /* bottom */
 section article:nth-child(4) {
-  border: 2px rgb(251, 0, 255) solid;
-  width: 74vw;
+  /* border: 2px rgb(251, 0, 255) solid; */
+  width: 66vw;
   height: 5vh;
   display: flex;
   justify-content: center;
-  border: 1px gray solid;
+  border: 2px lightgrey solid;
 }
 
 .bot-div + span {
-  height: 1.4rem;
+  height: 1.3rem;
   width: 0.2rem;
+  position: absolute;
   background-color: lightgray;
   border-radius: 99px;
   display: flex;
@@ -182,19 +183,18 @@ section article:nth-child(4) > div > a:nth-child(1) {
   display: flex;
   text-decoration: none;
   color: blue;
-  justify-content: left;
+  padding-top: 0.5rem;
 }
 /* div register now */
 section article:nth-child(4) > div:nth-child(1) {
   display: flex;
-  border: 2px rgb(0, 106, 255) solid;
-
-  padding-right: 2.5rem;
+  /* border: 2px rgb(0, 106, 255) solid; */
+  padding-right: 3rem;
 }
 /* div forgotten */
 section article:nth-child(4) div:last-child {
   display: flex;
-  border: 2px rgb(255, 0, 204) solid;
+  /* border: 2px rgb(255, 0, 204) solid; */
   padding-right: 1.5rem;
 }
 /* the round divider */
