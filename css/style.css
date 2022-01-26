@@ -20,6 +20,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background: F2F9FF;
+  /* position: relative; */
 }
 
 .logo {
@@ -177,4 +179,21 @@ section article:nth-child(4) > div:nth-child(2) {
   display: flex;
   /* border: 2px red solid; */
   justify-content: flex-start;
+}
+/* the round divider */
+section article:nth-child(2) {
+  border: 2px lightgray solid;
+  height: 11rem;
+  display: flex;
+  align-items: center;
+  background-color: F2F9FF;
+}
+/* circle  */
+section article:nth-child(2) > span {
+  position: absolute;
+  transform: translate(-50%);
+  border: 2px solid gray;
+  border-radius: 50%;
+  display: flex;
+  background: F2F9FF;
 }
