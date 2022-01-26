@@ -124,9 +124,11 @@ section
 }
 section article:nth-child(3) > form > section {
   display: flex;
-
+  width: 17vw;
+  height: 5vh;
   border: 2px purple dashed;
+  justify-content: space-between;
 }
-section article:nth-child(3) > form div:nth-of-type(4) {
+section article:nth-child(3) > form section > div:nth-of-type(1) {
   border: 2px orange dashed;
 }
