@@ -101,7 +101,7 @@ section article:nth-child(1) div span i {
   align-self: center;
 }
 section article:nth-child(3) > form {
-  /* border: 5px red solid; */
+  border: 5px red solid;
   width: 35vw;
   height: 35vh;
   display: flex;
@@ -128,7 +128,7 @@ section article:nth-child(3) > form > section {
   display: flex;
   width: 17vw;
   height: 5vh;
-  /* border: 2px purple dashed; */
+  border: 2px purple dashed;
   justify-content: space-between;
 }
 /* section article:nth-child(3) > form section > div:nth-of-type(1) label {
