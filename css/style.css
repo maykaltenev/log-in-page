@@ -28,10 +28,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* logo and login selector */
 section article:nth-child(1),
 section article:nth-child(3) {
-  width: 60vw;
-  height: 50vh;
+  width: 48vw;
+  height: 39vh;
   border: 2px green dashed;
   display: flex;
   justify-content: space-around;
@@ -45,17 +46,35 @@ section article:nth-child(3) {
   border: 20px blue solid;
 } */
 section article:nth-child(1) > div {
-  width: 15vw;
-  height: 8vh;
+  width: 17vw;
+  height: 10vh;
+  display: flex;
   border: 2px purple dashed;
   text-align: center;
+  align-content: center;
 }
+/* content selector */
+section article:nth-child(1) div span {
+  width: 10vw;
+  height: 6vh;
+  display: flex;
+  align-self: center;
+  border: 2px green solid;
+}
+/* link selector */
 section article:nth-child(1) div span a {
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 15vw;
-  height: 8vh;
   border: 2px coral dashed;
+  align-self: center;
+  width: 8vw;
+  height: 4vh;
+}
+/* icon selector */
+section article:nth-child(1) div span i {
+  border: 3px brown solid;
+  height: 3vh;
+  align-self: center;
 }
