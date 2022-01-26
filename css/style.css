@@ -9,7 +9,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  border: 2px blue dashed;
+  /* border: 2px blue dashed; */
 }
 
 .container {
@@ -50,8 +50,8 @@ section article:nth-child(3) {
 } */
 /* login  */
 section article:nth-child(1) > div {
-  width: 17vw;
-  height: 10vh;
+  width: 16vw;
+  height: 8vh;
   display: flex;
   /* border: 2px purple dashed; */
   text-align: center;
@@ -103,6 +103,7 @@ section article:nth-child(1) div span i {
   height: 3vh;
   align-self: center;
 }
+/* form */
 section article:nth-child(3) > form {
   /* border: 5px rgb(23, 129, 135) solid; */
   width: 35vw;
@@ -113,11 +114,13 @@ section article:nth-child(3) > form {
   align-items: center;
   font-weight: bold;
 }
+/* email */
 section article:nth-child(3) > form div:nth-of-type(1) > input[type="email"] {
   border: none;
   outline: none;
   border-bottom: 2px solid gray;
 }
+/* password */
 section
   article:nth-child(3)
   > form
@@ -127,6 +130,7 @@ section
   outline: none;
   border-bottom: 2px solid gray;
 }
+/* remember me and login */
 section article:nth-child(3) > form > section {
   display: flex;
   width: 17vw;
@@ -145,6 +149,7 @@ section article:nth-child(3) > form > section {
   > div:nth-of-type(1)
   > input[type="checkbox"] {
 } */
+/* login */
 section
   article:nth-child(3)
   > form
@@ -159,6 +164,8 @@ section
   cursor: pointer;
   /* font-weight: bold; */
 }
+/* input[type="button"]:active {
+} */
 /* bottom */
 section article:nth-child(4) {
   /* border: 2px rgb(251, 0, 255) solid; */
