@@ -186,7 +186,7 @@ section article:nth-child(2) {
   height: 11rem;
   display: flex;
   align-items: center;
-  background-color: F2F9FF;
+  background-color: #f2f9ff;
 }
 /* circle  */
 section article:nth-child(2) > span {
@@ -195,5 +195,5 @@ section article:nth-child(2) > span {
   border: 2px solid gray;
   border-radius: 50%;
   display: flex;
-  background: F2F9FF;
+  background: #f2f9ff;
 }
