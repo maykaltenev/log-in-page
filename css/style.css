@@ -126,10 +126,31 @@ section article:nth-child(3) > form > section {
   display: flex;
   width: 17vw;
   height: 5vh;
-  border: 2px purple dashed;
+  /* border: 2px purple dashed; */
   justify-content: space-between;
 }
 section article:nth-child(3) > form section > div:nth-of-type(1) label {
-  border: 2px orange dashed;
+  font-weight: bold;
+}
+/* checkbox bigger */
+/* section
+  article:nth-child(3)
+  > form
+  section
+  > div:nth-of-type(1)
+  > input[type="checkbox"] {
+} */
+section
+  article:nth-child(3)
+  > form
+  section
+  > div:nth-of-type(2)
+  > input[type="button"] {
+  width: 85px;
+  height: 30px;
+  text-decoration: none;
+  border: none;
+  background-color: #87cefa;
+  color: white;
   font-weight: bold;
 }
