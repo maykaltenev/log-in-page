@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: F2F9FF;
+  background: #fffafa;
   /* position: relative; */
 }
 
@@ -41,13 +41,14 @@ section article:nth-child(3) {
   justify-content: space-around;
   align-items: center;
 }
-/* box checkers */
+
 /* .middle {
   border: 20px green solid;
 }
 .login {
   border: 20px blue solid;
 } */
+/* login  */
 section article:nth-child(1) > div {
   width: 17vw;
   height: 10vh;
@@ -103,7 +104,7 @@ section article:nth-child(1) div span i {
   align-self: center;
 }
 section article:nth-child(3) > form {
-  border: 5px red solid;
+  border: 5px rgb(23, 129, 135) solid;
   width: 35vw;
   height: 35vh;
   display: flex;
@@ -160,25 +161,41 @@ section
 }
 /* bottom */
 section article:nth-child(4) {
-  border: 2px red solid;
+  border: 2px rgb(251, 0, 255) solid;
   width: 74vw;
   height: 5vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   border: 1px gray solid;
 }
-section article:nth-child(4) > div > a {
+
+.bot-div + span {
+  height: 1.4rem;
+  width: 0.2rem;
+  background-color: lightgray;
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section article:nth-child(4) > div > a:nth-child(1) {
+  display: flex;
   text-decoration: none;
   color: blue;
+  justify-content: left;
 }
+/* div register now */
 section article:nth-child(4) > div:nth-child(1) {
-  /* border: 2px red solid; */
-}
-
-section article:nth-child(4) > div:nth-child(2) {
   display: flex;
-  /* border: 2px red solid; */
-  justify-content: flex-start;
+  border: 2px rgb(0, 106, 255) solid;
+
+  padding-right: 2.5rem;
+}
+/* div forgotten */
+section article:nth-child(4) div:last-child {
+  display: flex;
+  border: 2px rgb(255, 0, 204) solid;
+  padding-right: 1.5rem;
 }
 /* the round divider */
 section article:nth-child(2) {
