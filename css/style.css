@@ -129,6 +129,7 @@ section article:nth-child(3) > form > section {
   border: 2px purple dashed;
   justify-content: space-between;
 }
-section article:nth-child(3) > form section > div:nth-of-type(1) {
+section article:nth-child(3) > form section > div:nth-of-type(1) label {
   border: 2px orange dashed;
+  font-weight: bold;
 }
