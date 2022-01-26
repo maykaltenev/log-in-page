@@ -159,8 +159,22 @@ section
 /* bottom */
 section article:nth-child(4) {
   border: 2px red solid;
-  width: 80vw;
+  width: 74vw;
   height: 5vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  border: 1px gray solid;
+}
+section article:nth-child(4) > div > a {
+  text-decoration: none;
+  color: blue;
+}
+section article:nth-child(4) > div:nth-child(1) {
+  /* border: 2px red solid; */
+}
+
+section article:nth-child(4) > div:nth-child(2) {
+  display: flex;
+  /* border: 2px red solid; */
+  justify-content: flex-start;
 }
