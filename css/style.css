@@ -22,6 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 /* the or element */
 .middle {
@@ -133,16 +134,24 @@ i {
 /* input[type="button"] {
   position: absolute;
 } */
-
-.bottom {
-  border: 2px solid #e5e4e8;
-  width: 65%;
+/* the bottom div */
+footer {
+  width: 100%;
   height: 8%;
   background-color: #f2f9ff;
   border: 2px black solid;
-  display: flex;
+  display: block;
   border: 2px blue solid;
   color: #1da1f2;
+  position: absolute;
+  top: 80%;
+  right: 0%;
+}
+/* place the Register now and Forgotten under the 2 containers */
+footer .bottom {
+  display: flex;
+  justify-content: space-around;
+  border: 2px red solid;
 }
 /* .bottom-span {
   display: flex;
