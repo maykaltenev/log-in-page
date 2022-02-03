@@ -139,19 +139,34 @@ footer {
   width: 100%;
   height: 8%;
   background-color: #f2f9ff;
-  border: 2px black solid;
   display: block;
-  border: 2px blue solid;
   color: #1da1f2;
   position: absolute;
   top: 80%;
   right: 0%;
+  border: 3px violet dashed;
 }
 /* place the Register now and Forgotten under the 2 containers */
 footer .bottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 2px red solid;
+}
+/* register div container*/
+footer div div:nth-child(1) {
+  border: 2px blue solid;
+  display: flex;
+  width: 50%;
+  height: 3%;
+  justify-content: flex-end;
+}
+/* forgotten div container */
+footer div div:nth-child(3) {
+  border: 2px blue solid;
+  display: flex;
+  width: 50%;
+  height: 3%;
+  justify-content: flex-start;
 }
 /* .bottom-span {
   display: flex;
