@@ -16,7 +16,7 @@ body {
 /* the whole log */
 .container {
   margin: 0;
-  width: 60%;
+  width: 40%;
   height: 50%;
   border: 2px green dashed;
   display: flex;
@@ -35,14 +35,18 @@ body {
   height: 30vh;
   border: 2px red dashed;
 }
-/* size of the the buttons */
-/* .left div {
-  margin-left: 15%;
-  width: 60%;
-  height: 27%;
+/* left login div */
+.left {
   display: flex;
-  position: relative;
-} */
+  align-items: center;
+  justify-content: center;
+}
+.login-all {
+  border: 5px rgb(242, 0, 255) solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* .left div span a {
   position: absolute;
   top: 0;
@@ -144,7 +148,7 @@ footer {
   position: absolute;
   top: 80%;
   right: 0%;
-  border: 3px violet dashed;
+  /* border: 3px violet dashed; */
 }
 /* place the Register now and Forgotten under the 2 containers */
 footer .bottom {
@@ -169,10 +173,14 @@ footer div div:nth-child(3) {
   justify-content: flex-start;
 }
 footer div span:nth-child(2) {
-  border: 0.5px #393939 solid;
-  width: 1rem;
-  border-radius: 99%;
-  background-color: #393939;
+  height: 1.5rem;
+  width: 0.2rem;
+  position: absolute;
+  background-color: lightgray;
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .bottom-span {
