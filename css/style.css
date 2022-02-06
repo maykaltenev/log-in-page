@@ -168,6 +168,13 @@ footer div div:nth-child(3) {
   height: 3%;
   justify-content: flex-start;
 }
+footer div span:nth-child(2) {
+  border: 0.5px #393939 solid;
+  width: 1rem;
+  border-radius: 99%;
+  background-color: #393939;
+}
+
 /* .bottom-span {
   display: flex;
 } */
