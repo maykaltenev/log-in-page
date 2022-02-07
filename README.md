@@ -1,6 +1,6 @@
 ## Log in page or Sign in in
 
-![Test this app yourself](maykaltenev.github.io/log-in-page/)
+[Test this app yourself](maykaltenev.github.io/log-in-page/)
 
 ---
 
