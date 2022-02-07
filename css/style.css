@@ -22,10 +22,7 @@ body {
   background-color: #fffafa;
   /* position: relative; */
 }
-/* left container */
-.container .logo {
-  padding-left: 5%;
-}
+
 .logo {
   height: 40vh;
   /* border: 20px red solid; */
@@ -54,11 +51,9 @@ section article:nth-child(3) {
 section article:nth-child(1) div {
   width: 16vw;
   height: 8vh;
-  /* border: 5px purple dashed; */
+  border: 5px purple dashed;
   border-radius: 1%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /* facebook */
 section article:nth-child(1) > div:nth-of-type(1) {
@@ -80,17 +75,16 @@ section article:nth-child(1) div {
   /* width: 16vw;
   height: 8vh; */
   display: flex;
-  align-self: flex-start;
-  border: 2px rgb(0, 128, 109) solid;
 }
 /* link selector - should be clickable on all */
-section article:nth-child(1) div span a {
+section article:nth-child(1) div a {
   width: 16vw;
   height: 8vh;
-  /* border: 2px coral dashed; */
   text-decoration: none;
-  border-left: 1px inset;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* icon selector */
 /* section article:nth-child(1) div span i {
