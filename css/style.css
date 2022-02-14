@@ -237,7 +237,7 @@ section article:nth-child(2) > span {
     display: flex;
     height: 100%;
     width: 20rem;
-    font-size: 1rem;
+    font-size: rem;
   }
   .container .logo div {
     width: 95%;
@@ -263,7 +263,7 @@ section article:nth-child(2) > span {
     align-items: center;
   }
   .container .login form h1 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
   }
   .container .login form input[type="email"],
@@ -323,8 +323,111 @@ section article:nth-child(2) > span {
   }
 } /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40vh 5vh 40vh 14vh;
+    grid-template-areas:
+      "login"
+      "middle"
+      "logo"
+      "bottom";
+  }
+  .container .logo {
+    grid-area: logo;
+    display: flex;
+    height: 100%;
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+  .container .logo div {
+    width: 95%;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+  .container .middle {
+    grid-area: middle;
+    height: 5%;
+    width: 20rem;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+  .container .middle span {
+    margin-left: 5%;
+  }
+  .container .login {
+    width: 20rem;
+    height: 100%;
+    grid-area: login;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .login form h1 {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+  .container .login form input[type="email"],
+  .container .login form input[type="password"] {
+    width: 15rem;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 1.1rem;
+    position: relative;
+  }
+  .container .login form i {
+    position: absolute;
+    font-size: 1.4rem;
+    z-index: 1;
+  }
+  .container .bottom {
+    grid-area: bottom;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container .login .underline {
+    width: 20rem;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* checkbox remember me section */
+  .container .login .underline .remember {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /* checkbox */
+  .container .login .underline .log input[type="button"] {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 4%;
+    font-size: 1.3rem;
+  }
+  /* text Remember me */
+  .container .login .underline .remember input[type="checkbox"] + div {
+    font-size: 1.3rem;
+  }
+
+  .container .bottom {
+    height: 4rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .container .bottom div {
+    width: 14rem;
+    height: 1rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-left: 10%;
+  }
 } /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (landscape) {
 } /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 } /* Extra large devices (large laptops and desktops, 1200px and up) */
