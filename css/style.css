@@ -152,7 +152,7 @@ section article:nth-child(3) > form > section {
 section
   article:nth-child(3)
   > form
-  section
+  .underline
   > div:nth-of-type(2)
   > input[type="button"] {
   width: 85px;
@@ -222,19 +222,89 @@ section article:nth-child(2) > span {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .container {
-    width: 500px;
-    height: auto;
-    border: 2px lightgray solid;
-    display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 45vh 5vh 45vh 25vh;
+    grid-template-areas: "logo" "middle" "login" "bottom";
   }
   .container .logo {
-    margin-right: 100px;
+    grid-area: logo;
+    display: flex;
+    height: 100%;
+    width: 20rem;
+    font-size: 1rem;
   }
   .container .logo div {
-    width: 135px;
+    width: 95%;
+    font-size: 1.2rem;
+    justify-content: center;
   }
-  .middle {
-    margin-right: 18%;
+  .container .middle {
+    grid-area: middle;
+    height: 5%;
+    width: 20rem;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+  .container .middle span {
+    margin-left: 5%;
+  }
+  .container .login {
+    width: 20rem;
+    height: 100%;
+    grid-area: login;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px red solid;
+  }
+  .container .login form h1 {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
+  .container .login form input[type="email"],
+  .container .login form input[type="password"] {
+    width: 15rem;
+    border: 1px red solid;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 1.1rem;
+    position: relative;
+  }
+  .container .login form i {
+    position: absolute;
+    font-size: 1.2rem;
+    z-index: 1;
+  }
+  .container .bottom {
+    grid-area: bottom;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container .login .underline {
+    width: 20rem;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* checkbox remember me section */
+  .container .login .underline .remember {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /* checkbox */
+  .container .login .underline .remember input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  /* text Remember me */
+  .container .login .underline .remember input[type="checkbox"] + div {
+    font-size: 1.2rem;
+    border: 1px red solid;
   }
 } /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
