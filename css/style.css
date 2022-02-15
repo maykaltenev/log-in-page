@@ -40,13 +40,11 @@ section article:nth-child(3) {
   justify-content: space-around;
   align-items: center;
 }
-
-/* .middle {
-  border: 20px green solid;
+/* size OR */
+.middle {
+  font-size: 1.5rem;
 }
-.login {
-  border: 20px blue solid;
-} */
+
 /* login  */
 section article:nth-child(1) div {
   width: 16vw;
@@ -54,6 +52,7 @@ section article:nth-child(1) div {
   /* border: 5px purple dashed; */
   border-radius: 1%;
   display: flex;
+  font-size: 1.1rem;
 }
 /* facebook */
 section article:nth-child(1) > div:nth-of-type(1) {
@@ -113,11 +112,16 @@ section article:nth-child(3) > form {
   align-items: center;
   font-weight: bold;
 }
+section article:nth-child(3) > form h1 {
+  font-size: 1.6rem;
+}
 /* email */
 section article:nth-child(3) > form div:nth-of-type(1) > input[type="email"] {
   border: none;
   outline: none;
+  width: 13rem;
   border-bottom: 2px solid gray;
+  font-size: 1.1rem;
 }
 /* password */
 section
@@ -127,27 +131,49 @@ section
   > input[type="password"] {
   border: none;
   outline: none;
+  width: 13rem;
   border-bottom: 2px solid gray;
+  font-size: 1.1rem;
 }
-/* remember me and login */
-section article:nth-child(3) > form > section {
+
+.container .login form input[type="email"],
+.container .login form input[type="password"] {
+  text-align: center;
+}
+/* target the icons */
+.container .login form i {
+  position: absolute;
+  font-size: 1.1rem;
+
+  z-index: 1;
+} /* remember me and login */
+section article:nth-child(3) > form > .underline {
   display: flex;
-  width: 17vw;
-  height: 5vh;
-  /* border: 2px purple dashed; */
+  width: 17rem;
+  height: 5rem;
   justify-content: space-between;
+  align-items: center;
 }
-/* section article:nth-child(3) > form section > div:nth-of-type(1) label {
-  font-weight: bold;
-} */
+/* checkbox and remember me */
+.container .login .underline .remember {
+  width: 11rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 /* checkbox bigger */
-/* section
+section
   article:nth-child(3)
   > form
-  section
+  .underline
   > div:nth-of-type(1)
   > input[type="checkbox"] {
-} */
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#rem {
+  font-size: 1.2rem;
+}
 /* login */
 section
   article:nth-child(3)
@@ -155,25 +181,25 @@ section
   .underline
   > div:nth-of-type(2)
   > input[type="button"] {
-  width: 85px;
-  height: 40px;
+  width: 7rem;
+  height: 3rem;
   border: lightblue;
   background-color: #87cefa;
   color: white;
   cursor: pointer;
-  /* font-weight: bold; */
+  font-size: 1.9rem;
 }
-/* input[type="button"]:active {
-} */
+
 /* bottom */
 section article:nth-child(4) {
-  /* border: 2px rgb(251, 0, 255) solid; */
   width: 66vw;
   height: 5vh;
   display: flex;
   justify-content: center;
   border: 2px lightgrey solid;
+  font-size: 1.3rem;
 }
+/* divider */
 .bot-div + span {
   height: 1.3rem;
   width: 0.2rem;
@@ -202,7 +228,6 @@ section article:nth-child(4) div:last-child {
   padding-right: 1.5rem;
 }
 /* the round divider */
-
 section article:nth-child(2) {
   border: 2px lightgray solid;
   height: 11rem;
@@ -221,6 +246,7 @@ section article:nth-child(2) > span {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  /* change the structure from top to bottom */
   .container {
     width: 100vw;
     height: 100vh;
@@ -232,6 +258,7 @@ section article:nth-child(2) > span {
       "logo"
       "bottom";
   }
+  /* target the container with the logos  */
   .container .logo {
     grid-area: logo;
     display: flex;
@@ -239,11 +266,13 @@ section article:nth-child(2) > span {
     width: 20rem;
     font-size: rem;
   }
+  /* each logo */
   .container .logo div {
     width: 95%;
     font-size: 1.2rem;
     justify-content: center;
   }
+  /* middle line */
   .container .middle {
     grid-area: middle;
     height: 5%;
@@ -251,9 +280,11 @@ section article:nth-child(2) > span {
     font-size: 1.5rem;
     justify-content: center;
   }
+  /* center */
   .container .middle span {
     margin-left: 5%;
   }
+  /* the sign in form */
   .container .login {
     width: 20rem;
     height: 100%;
@@ -262,10 +293,14 @@ section article:nth-child(2) > span {
     justify-content: center;
     align-items: center;
   }
+  /* resize header */
   .container .login form h1 {
-    font-size: 2rem;
+    width: 10rem;
+    border: 1px red solid;
+    font-size: 1.7rem;
     padding-bottom: 1rem;
   }
+  /* resize the bottom line */
   .container .login form input[type="email"],
   .container .login form input[type="password"] {
     width: 15rem;
@@ -274,16 +309,13 @@ section article:nth-child(2) > span {
     padding-bottom: 1.1rem;
     position: relative;
   }
+  /* target the icons */
   .container .login form i {
     position: absolute;
     font-size: 1.2rem;
     z-index: 1;
   }
-  .container .bottom {
-    grid-area: bottom;
-    flex-direction: column;
-    justify-content: center;
-  }
+  /* elements under the email and password */
   .container .login .underline {
     width: 20rem;
     height: 25%;
@@ -307,6 +339,14 @@ section article:nth-child(2) > span {
   .container .login .underline .remember input[type="checkbox"] + div {
     font-size: 1.2rem;
   }
+  /* size of the button  */
+  .container .login .underline .log input[type="button"] {
+    width: 6rem;
+    height: 3rem;
+    border-radius: 4%;
+    font-size: 1.3rem;
+  }
+  /* bottom part */
   .container .bottom {
     height: 4rem;
     width: 20rem;
@@ -314,6 +354,7 @@ section article:nth-child(2) > span {
     flex-direction: row;
     justify-content: space-around;
   }
+  /* target the last two divs */
   .container .bottom div {
     width: 14rem;
     height: 1rem;
@@ -321,8 +362,10 @@ section article:nth-child(2) > span {
     font-size: 1.4rem;
     padding-left: 10%;
   }
-} /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up to 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /* need to target resize again because it is not mobile first */
   .container {
     width: 100vw;
     height: 100vh;
@@ -365,7 +408,7 @@ section article:nth-child(2) > span {
     align-items: center;
   }
   .container .login form h1 {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     padding-bottom: 1rem;
   }
   .container .login form input[type="email"],
@@ -395,7 +438,7 @@ section article:nth-child(2) > span {
   }
   /* checkbox remember me section */
   .container .login .underline .remember {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -409,7 +452,11 @@ section article:nth-child(2) > span {
   }
   /* text Remember me */
   .container .login .underline .remember input[type="checkbox"] + div {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .container .login .underline .remember input[type="checkbox"] {
+    width: 1.8rem;
+    height: 1.8rem;
   }
 
   .container .bottom {
@@ -426,9 +473,7 @@ section article:nth-child(2) > span {
     font-size: 1.5rem;
     padding-left: 10%;
   }
-} /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (landscape) {
-} /* Large devices (laptops/desktops, 992px and up) */
+}
 @media only screen and (min-width: 992px) {
 } /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
