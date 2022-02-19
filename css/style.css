@@ -139,12 +139,12 @@ section
 .container .login form input[type="email"],
 .container .login form input[type="password"] {
   text-align: center;
+  padding: 0.2rem 0.6rem;
 }
 /* target the icons */
 .container .login form i {
   position: absolute;
   font-size: 1.1rem;
-
   z-index: 1;
 } /* remember me and login */
 section article:nth-child(3) > form > .underline {
@@ -181,13 +181,14 @@ section
   .underline
   > div:nth-of-type(2)
   > input[type="button"] {
-  width: 7rem;
-  height: 3rem;
+  width: 6rem;
+  height: 2.5rem;
   border: lightblue;
   background-color: #87cefa;
   color: white;
   cursor: pointer;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
+  border-radius: 3%;
 }
 
 /* bottom */
@@ -209,23 +210,23 @@ section article:nth-child(4) {
   justify-content: center;
   align-items: center;
 }
+/* anchor at the bottom */
 section article:nth-child(4) > div > a:nth-child(1) {
   display: flex;
   text-decoration: none;
   color: blue;
-  padding-top: 0.5rem;
+  padding: 0.2rem 0.3rem;
+  font-size: 1.5rem;
 }
 /* div register now */
 section article:nth-child(4) > div:nth-child(1) {
   display: flex;
   /* border: 2px rgb(0, 106, 255) solid; */
-  padding-right: 3rem;
 }
 /* div forgotten */
 section article:nth-child(4) div:last-child {
   display: flex;
   /* border: 2px rgb(255, 0, 204) solid; */
-  padding-right: 1.5rem;
 }
 /* the round divider */
 section article:nth-child(2) {
@@ -296,7 +297,6 @@ section article:nth-child(2) > span {
   /* resize header */
   .container .login form h1 {
     width: 10rem;
-    border: 1px red solid;
     font-size: 1.7rem;
     padding-bottom: 1rem;
   }
@@ -356,11 +356,14 @@ section article:nth-child(2) > span {
   }
   /* target the last two divs */
   .container .bottom div {
-    width: 14rem;
-    height: 1rem;
-    justify-content: center;
-    font-size: 1.4rem;
-    padding-left: 10%;
+    width: 15rem;
+    height: 2rem;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+  }
+  .container .bottom div a {
+    width: 9rem;
+    height: 3rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up to 992px) */
@@ -458,23 +461,24 @@ section article:nth-child(2) > span {
     width: 1.8rem;
     height: 1.8rem;
   }
-
   .container .bottom {
     height: 4rem;
-    width: 20rem;
+    width: 23rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
+  .container .bottom div a {
+    width: 10rem;
+    height: 5rem;
+    font-size: larger;
+  }
+  /* bottom part */
   .container .bottom div {
-    width: 14rem;
-    height: 1rem;
+    width: 20rem;
+    height: 3rem;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-left: 10%;
   }
-}
-@media only screen and (min-width: 992px) {
-} /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }
