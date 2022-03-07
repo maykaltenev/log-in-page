@@ -1,0 +1,6 @@
+// display: flex with justify-content and align-items property by choice
+@mixin flexAll($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
