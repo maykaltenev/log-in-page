@@ -39,17 +39,17 @@ section {
     /* facebook */
     article:nth-child(1) > div:nth-of-type(1) {
       background-color: $bg-facebook-color;
-      color: white;
+      color: $fonts-color;
     }
     /* google */
     article:nth-child(1) > div:nth-of-type(2) {
       background-color: $bg-google-color;
-      color: white;
+      color: $fonts-color;
     }
     /* twitter */
     article:nth-child(1) > div:nth-of-type(3) {
       background-color: $bg-twitter-color;
-      color: white;
+      color: $fonts-color;
     }
   }
 }
