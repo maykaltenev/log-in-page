@@ -13,3 +13,43 @@
   flex-direction: column;
   align-items: center;
 }
+/* logo and login selector */
+section {
+  article:nth-child(1),
+  article:nth-child(3) {
+    width: 25vw;
+    height: 40vh;
+    @include flex(space-around, center);
+  }
+}
+/* size OR */
+.middle {
+  font-size: 1.5rem;
+}
+
+/* login  */
+section {
+  article:nth-child(1) div {
+    width: 16vw;
+    height: 8vh;
+    /* border: 5px purple dashed; */
+    border-radius: 1%;
+    display: flex;
+    font-size: 1.1rem;
+    /* facebook */
+    article:nth-child(1) > div:nth-of-type(1) {
+      background-color: $bg-facebook-color;
+      color: white;
+    }
+    /* google */
+    article:nth-child(1) > div:nth-of-type(2) {
+      background-color: $bg-google-color;
+      color: white;
+    }
+    /* twitter */
+    article:nth-child(1) > div:nth-of-type(3) {
+      background-color: $bg-twitter-color;
+      color: white;
+    }
+  }
+}
