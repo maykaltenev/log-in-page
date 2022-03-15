@@ -3,8 +3,7 @@
   height: 45vh;
   border: 2px gray solid;
   border-radius: 1%;
-  @include flex($center, $center);
-  flex-wrap: wrap;
+  @include flex-center(center, center);
   background-color: $bg-color-white;
 }
 .logo {
@@ -19,7 +18,7 @@ section {
   article:nth-child(3) {
     width: 25vw;
     height: 40vh;
-    @include flex(space-around, center);
+    @include flex-center(space-around, center);
   }
 }
 /* size OR */
@@ -32,76 +31,74 @@ section {
   article:nth-child(1) div {
     width: 16vw;
     height: 8vh;
-    /* border: 5px purple dashed; */
     border-radius: 1%;
-    display: flex;
-    font-size: 1.1rem;
+    @include flex-center(center, center);
+    font-size: 1.4rem;
+
     /* facebook */
-    article:nth-child(1) > div:nth-of-type(1) {
+    &:nth-of-type(1) {
       background-color: $bg-facebook-color;
       color: $fonts-color;
     }
     /* google */
-    article:nth-child(1) > div:nth-of-type(2) {
-      background-color: $bg-google-color;
+    &:nth-of-type(2) {
+      background-color: $google-color;
       color: $fonts-color;
     }
     /* twitter */
-    article:nth-child(1) > div:nth-of-type(3) {
+    &:nth-of-type(3) {
       background-color: $bg-twitter-color;
       color: $fonts-color;
     }
-    /* content selector */
-    article:nth-child(1) div {
-      display: flex;
-    }
     /* link selector - should be clickable on all */
-    article:nth-child(1) div a {
+    a {
       width: 16vw;
       height: 8vh;
       text-decoration: none;
       color: $fonts-color;
-      @include flex(center, center);
-    }
-    /* bar between icon and link */
-    article:nth-child(1) div a span {
-      height: 1rem;
-      width: 0.1rem;
-      background-color: $border-color-gray;
-      @include flex(center, center);
-      margin: 0 0.5rem 0 0.5rem;
-    }
-    /* form */
-    article:nth-child(3) > form {
-      width: 35vw;
-      height: 35vh;
-      @include flex(space-around, center);
-      flex-direction: column;
-      font-weight: bold;
-    }
-    article:nth-child(3) > form h1 {
-      font-size: 1.6rem;
-    }
-    /* email */
-    article:nth-child(3) > form div:nth-of-type(1) > input[type="email"] {
-      border: none;
-      outline: none;
-      width: 13rem;
-      border-bottom: 2px solid gray;
-      font-size: 1.1rem;
-    }
-    /* password */
-    article:nth-child(3) > form div:nth-of-type(2) > input[type="password"] {
-      border: none;
-      outline: none;
-      width: 13rem;
-      border-bottom: 2px $border-color-gray solid;
-      font-size: 1.1rem;
+      @include flex-center(center, center);
+      /* bar between icon and link */
+      span {
+        height: 1rem;
+        width: 0.1rem;
+        background-color: $border-color-gray;
+        color: $fonts-color;
+        margin: 0 0.5rem 0 0.5rem;
+      }
     }
   }
-  .container .login form input[type="email"],
-  .container .login form input[type="password"] {
-    text-align: center;
-    padding: 0.2rem 0.6rem;
+
+  /* form */
+  article:nth-child(3) {
+    form {
+      width: 35vw;
+      height: 35vh;
+      @include flex-center(center, center);
+      flex-direction: column;
+      font-weight: bold;
+      h1 {
+        font-size: 1.6rem;
+      }
+      /* email */
+      div:nth-of-type(1) > input[type="email"] {
+        border: none;
+        outline: none;
+        width: 13rem;
+        border-bottom: 2px solid $border-color-gray;
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0.2rem 0.6rem;
+      }
+      /* password */
+      div:nth-of-type(2) > input[type="password"] {
+        border: none;
+        outline: none;
+        width: 13rem;
+        border-bottom: 2px $border-color-gray solid;
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0.2rem 0.6rem;
+      }
+    }
   }
 }

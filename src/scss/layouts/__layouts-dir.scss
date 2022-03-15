@@ -1,8 +1,8 @@
-@import "./main.scss";
-@import "./footer.scss";
+@import "./main";
+@import "./footer";
 
 body {
-  @include flex(center, center);
+  @include flex-center(center, center);
   width: 100vw;
   height: 100vh;
 }
